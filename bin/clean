@@ -6,6 +6,14 @@ function echoRed(){
 }
 
 echoRed "------------------Start Cleaning------------------"
+
+cd $BLOGB
+if [ ! -f ".DS_Store" ] && [ ! -d "public/" ]; then 
+	echoRed "-----------------Cleans Up Finish-----------------"
+	echoRed "-----------------Have a nice day!-----------------"
+	exit 0
+fi 
+
 export BLOGB=~/Doc/Blog/Blog
 export BLOG=~/Doc/Blog/
 
