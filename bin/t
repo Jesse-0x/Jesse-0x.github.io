@@ -44,7 +44,7 @@ echoPrimary " -----------------Finish Copying!-----------------"
 echoPrimary "------------------Start Pushing------------------"
 cd $GITBLOG; 
 
-if [ "$1" = "u" ]; then
+if [ "$1" != "u" ]; then
 	git add .
 	git commit -m $1
 	git push

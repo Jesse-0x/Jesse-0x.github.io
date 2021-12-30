@@ -194,7 +194,7 @@ body:
     # Opacity of mask (value: 0 ~ 1)
     opacity:
       # Opacity of the mask by default.
-      default: 0.3
+      default: 0.1
       # Opacity of the mask in night mode.
       night_mode: 0.6
 
@@ -319,14 +319,14 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/ || fab fa-github
-  #google: https://plus.google.com/ || fab fa-google
+  github: https://github.com/jgong-whschool || fab fa-github
+  google: mailto:jgong@whschool.org || fab fa-google
   #twitter: https://twitter.com/ || fab fa-twitter
   #youtube: https://youtube.com/ || fab fa-youtube
   # segmentfault: https://segmentfault.com/ || origin:sf
   # weibo: https://weibo.com/ || fab fa-weibo
   # zhihu: https://www.zhihu.com/ || origin:知
-  wechat: Jesse_gongGongruiyan || fab fa-weixin
+  wechat: weixin://dl/add/Jesse_gongGongruiyan || fab fa-weixin
   # telegram: yournumber || fab fa-telegram
   # qq: yournumber || fab fa-qq
 
@@ -557,18 +557,18 @@ livere:
 # Disqus
 # See: https://disqus.com/
 disqus:
-  enable: true
+  enable: false
   shortname: jg-blog
   count: true
 
 # Utterances
 # See: https://utteranc.es/
 utterances:
-  enable: false
+  enable: true
   # Github username.
-  owner:
+  owner: jgong-whschool
   # Github repository.
-  repo:
+  repo: jgong-whschool.github.io
   # Choose the mapping between blog posts and GitHub issues.
   # Optional values: pathname | url | title | og:title
   mapping: title
