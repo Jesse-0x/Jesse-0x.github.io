@@ -23,21 +23,22 @@ if [ ! -d "node_modules/" ]; then
 	npm i
 fi 
 
-echoRed "---------------Starts Hexo cleaning---------------"
-hexo clean
+if [ ! -n "$1" ] ;then
+	echoRed "---------------Starts Hexo cleaning---------------"
+	hexo clean
+fi 
 
 echoRed "-----------Start Removing Default Files-----------"
 find $BLOGB -name ".DS_Store"  | xargs rm -v
 find $BLOGB -name "Thumbs.db"  | xargs rm -v
+find $BLOGB -name "db.json"  | xargs rm -v
 
 echoRed "------------Start Removing Cache Files------------"
-if [ -f "package-lock.json/" ]; then 
-	rm -rv package-lock.json
-fi 
+find $BLOGB -name "package-lock.json"  | xargs rm -rv 
 find $BLOGB -name "*.log"  | xargs rm -v
 
 
-if [ $1 != "d" ]; then
+if [ -n "$1" ] ;then
 	if [ -d "node_modules/" ]; then 
 		echoRed "---------------Removing Node Module---------------"
 		rm -rv node_modules

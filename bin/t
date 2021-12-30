@@ -43,18 +43,16 @@ echoPrimary " -----------------Finish Copying!-----------------"
 
 echoPrimary "------------------Start Pushing------------------"
 cd $GITBLOG; 
-npm i
 
-if [ $1 != "u" ]; then
-	export message="updated post, {{ now('YYYY-MM-DD HH:mm:ss') }}"
+if [ $1 = "u" ]; then
+	export message="UPDATE.$date"
 else
 	export message=$1
 fi
 
-hexo clean
-hexo g 
-/bin/cp -f $GITBLOG/source/manifest.json $GITBLOG/public/manifest.json
-hexo deploy
+git add .
+git commit -m "$message"
+git push
 
 echoPrimary "-----------------Finish Pushing!-----------------"
 echoPrimary "-----------------Have a nice day-----------------"
