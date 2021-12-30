@@ -1,0 +1,35 @@
+set -e;
+
+function echoPrimary(){
+	echo "\033[44;37m $1 \033[0m"
+	sleep 0.3
+}
+
+echoPrimary "------------------Start Copying------------------"
+export BLOGB=~/Doc/Blog/Blog
+export BLOG=~/Doc/Blog/
+export GITBLOG=~/Doc/Blog/jgong-whschool.github.io
+
+if [ ! -d "$GITBLOG" ]; then
+	echoPrimary " ---------------Initing file in Git---------------"
+	cd $BLOG
+	git clone https://github.com/jgong-whschool/jgong-whschool.github.io
+elif [ ! -d "$GITBLOG/.git/" ]; then
+	echoPrimary "---------------Initing file in Git---------------"
+	cd $BLOG
+	rm -rv $GITBLOG
+	git clone https://github.com/jgong-whschool/jgong-whschool.github.io
+fi
+
+if [ "`ls $GITBLOG| grep -v .git | xargs`" != "" ]; then
+  echoPrimary "------------Git folder is not empty------------"
+  cd $GITBLOG; rm -rv `ls $GITBLOG| grep -v .git | xargs`
+fi
+
+echoPrimary " -----------Copying files to Git folder-----------"
+echoPrimary "Cleaning Up"
+$BLOGB/bin/clean
+echoPrimary "Copying"
+cd $BLOGB; cp -ri `ls $BLOGB| grep -v .git | xargs` $GITBLOG/
+
+echoPrimary " -----------------Finish Copying!-----------------"
