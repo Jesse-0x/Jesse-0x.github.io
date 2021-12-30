@@ -16,7 +16,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: Deploy
-        uses: jgong-whschool/pages-build-deployment@v1
+        uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           target_branch: gh-pages
           build_dir: public
