@@ -8,12 +8,12 @@ subtitle: ''
 description: 'Nice to meet u! This is my Blog! :b'
 keywords: Blog Jesse WH Wardlaw Hartridge Student
 author: Jesse Gong
-language: en, zh-CN
+language: en
 timezone: 'America/New_York'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://localhost:4000
+url: https://jessse.me
 permalink: :year/:month/:day/
 permalink_defaults:
 pretty_urls:
@@ -146,3 +146,8 @@ feed:
     wrapGenerate: true
     options:
       offlineGoogleAnalytics: true
+
+search:
+  path: search.json
+  field: post
+  content: true

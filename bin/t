@@ -1,0 +1,27 @@
+set -e;
+
+function echoPrimary(){
+	echo "\033[44;37m $1 \033[0m"
+	sleep 0.3
+}
+
+echoPrimary "------------------Start Copying------------------"
+export BLOGB=~/Doc/Blog/Blog
+export BLOG=~/Doc/Blog/
+export GITBLOG=~/Doc/Blog/jgong-whschool.github.io
+
+if [ "`ls -A `" = ".git" ]; then
+  echo "------------Git folder is not empty------------"
+  cd $GITBLOG; rm -rv $GITBLOG/* 
+fi
+
+echoPrimary " ---------------Initing file in Git---------------"
+if [ ! -d "$GITBLOG/.git/" ]; then
+	cd BLOGB
+	rm -rv $GITBLOG
+	git clone https://github.com/jgong-whschool/jgong-whschool.github.io
+fi
+cd $GITBLOG; git pull
+
+echoPrimary " -----------Copying files to Git folder-----------"
+

@@ -1,0 +1,48 @@
+set -e;
+
+function echoRed(){
+	echo "\033[41;37m $1 \033[0m"
+	sleep 0.3
+}
+
+echoRed "------------------Start Cleaning------------------"
+export BLOGB=~/Doc/Blog/Blog
+export BLOG=~/Doc/Blog/
+
+cd $BLOGB
+if [ ! -d "node_modules/" ]; then 
+	echoRed "------Node not detected, Start install nodes------"
+	npm i
+fi 
+
+echoRed "---------------Starts Hexo cleaning---------------"
+hexo clean
+
+echoRed "-----------Start Removing Default Files-----------"
+find $BLOGB -name ".DS_Store"  | xargs rm -v
+find $BLOGB -name "Thumbs.db"  | xargs rm -v
+
+echoRed "------------Start Removing Cache Files------------"
+find $BLOGB -name "db.json"  | xargs rm -v
+find $BLOGB -name "package-lock.json"  | xargs rm -v
+find $BLOGB -name "*.log"  | xargs rm -v
+
+if [ -d "node_modules/" ]; then 
+	echoRed "---------------Removing Node Module---------------"
+	rm -rv node_modules
+fi 
+
+if [ -d "public/" ]; then 
+	echoRed "--------------Removing Hexo Generate--------------"
+	rm -rv public
+fi 
+
+if [ -d ".deploy*/" ]; then 
+	echoRed "-----------------Removing .deploy-----------------"
+	rm -rv .deploy*
+fi 
+
+
+
+echoRed "-----------------Cleans Up Finish-----------------"
+echoRed "-----------------Have a nice day!-----------------"
