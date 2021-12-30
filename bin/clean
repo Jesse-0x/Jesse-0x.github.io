@@ -14,6 +14,11 @@ if [ ! -d "node_modules/" ]; then
 	echoRed "------Node not detected, Start install nodes------"
 	npm i
 fi 
+cd $BLOGB
+if [ ! -d "node_modules/" ]; then 
+	echoRed "------Node not detected, Start install nodes------"
+	npm i
+fi 
 
 echoRed "---------------Starts Hexo cleaning---------------"
 hexo clean

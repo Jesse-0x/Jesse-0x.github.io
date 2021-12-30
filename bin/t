@@ -1,5 +1,10 @@
 set -e;
 
+if [ ! -n "$1" ] ;then
+	echo "\033[41;37m Please Using this command with input of commit name! \033[0m"
+	exit 1
+fi
+
 function echoPrimary(){
 	echo "\033[44;37m $1 \033[0m"
 	sleep 0.3
@@ -31,5 +36,7 @@ echoPrimary "Cleaning Up"
 $BLOGB/bin/clean
 echoPrimary "Copying"
 cd $BLOGB; cp -ri `ls $BLOGB| grep -v .git | xargs` $GITBLOG/
+#cd $BLOGB; cp -ri .github $GITBLOG/
+#cd $BLOGB; cp -ri .gitignore $GITBLOG/
 
 echoPrimary " -----------------Finish Copying!-----------------"
