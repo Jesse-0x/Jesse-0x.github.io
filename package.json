@@ -2,7 +2,7 @@
   "name": "Blog",
   "version": "1.1.4",
   "scripts": {
-    "build": "bin/clean",
+    "build": "bin/build",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
