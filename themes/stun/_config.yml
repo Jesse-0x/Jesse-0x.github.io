@@ -118,8 +118,8 @@ night_mode:
     bg_color: "#8c8a8a"
   # The icon that stand for day and night.
   icon:
-    dark: 🌜
-    light: 🌞
+    dark: ☾
+    light: ☼
 
 # The layout for sidebar and content of site.
 layout:
@@ -157,12 +157,12 @@ header:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: /images/avatar.png
+    url: /images/bkg.png
   # Mask effect of the background image.
   mask:
     enable: true
     # Opacity of the mask (value: 0 ~ 1)
-    opacity: 0.5
+    opacity: 0.3
   nav:
     # Height of the navigation bar (Supports all CSS units)
     height: 50px
@@ -179,22 +179,22 @@ header:
 body:
   # Background image of site body.
   bg_image:
-    enable: false #!!!!!!
+    enable: true #!!!!!!
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url:
+    url: /images/bbkg.png
     # Whether to fixed the background image.
     fixed: true
     # Whether to repeat the image as much as possible to cover the entire area.
     repeat: false
   # Mask effect of the background image.
   mask:
-    enable: false
+    enable: true
     # Opacity of mask (value: 0 ~ 1)
     opacity:
       # Opacity of the mask by default.
-      default: 0.1
+      default: 0.3
       # Opacity of the mask in night mode.
       night_mode: 0.6
 
