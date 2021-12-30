@@ -33,10 +33,28 @@ fi
 
 echoPrimary " -----------Copying files to Git folder-----------"
 echoPrimary "Cleaning Up"
-$BLOGB/bin/clean
+$BLOGB/bin/clean d
 echoPrimary "Copying"
 cd $BLOGB; cp -ri `ls $BLOGB| grep -v .git | xargs` $GITBLOG/
-#cd $BLOGB; cp -ri .github $GITBLOG/
-#cd $BLOGB; cp -ri .gitignore $GITBLOG/
+cd $BLOGB; /bin/cp -rf .github $GITBLOG/
+cd $BLOGB; /bin/cp -rf .gitignore $GITBLOG/
 
 echoPrimary " -----------------Finish Copying!-----------------"
+
+echoPrimary "------------------Start Pushing------------------"
+cd $GITBLOG; 
+npm i
+
+if [ $1 != "u" ]; then
+	export message="updated post, {{ now('YYYY-MM-DD HH:mm:ss') }}"
+else
+	export message=$1
+fi
+
+hexo clean
+hexo g 
+/bin/cp -f $GITBLOG/source/manifest.json $GITBLOG/public/manifest.json
+hexo deploy
+
+echoPrimary "-----------------Finish Pushing!-----------------"
+echoPrimary "-----------------Have a nice day-----------------"
