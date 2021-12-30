@@ -2,3 +2,4 @@ set -e;
 
 hexo g
 cp source/manifest.json public/manifest.json
+cp CNAME public/CNAME 

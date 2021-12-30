@@ -44,15 +44,18 @@ echoPrimary " -----------------Finish Copying!-----------------"
 echoPrimary "------------------Start Pushing------------------"
 cd $GITBLOG; 
 
-if [ $1 = "u" ]; then
-	export message="UPDATE.$date"
+if [ $1 1= "u" ]; then
+	git add .
+	git commit -m $1
+	git push
+
 else
-	export message=$1
+	git add .
+	git commit -m "UPDATE.$date"
+	git push
 fi
 
-git add .
-git commit -m "$message"
-git push
+
 
 echoPrimary "-----------------Finish Pushing!-----------------"
 echoPrimary "-----------------Have a nice day-----------------"

@@ -19,13 +19,12 @@ export BLOG=~/Doc/Blog/
 
 cd $BLOGB
 if [ ! -d "node_modules/" ]; then 
-	echoRed "------Node not detected, Start install nodes------"
-	npm i
-fi 
-
-if [ ! -n "$1" ] ;then
-	echoRed "---------------Starts Hexo cleaning---------------"
-	hexo clean
+	if [ ! -n "$1" ] ;then
+		echoRed "------Node not detected, Start install nodes------"
+		npm i
+		echoRed "---------------Starts Hexo cleaning---------------"
+		hexo clean
+	fi
 fi 
 
 echoRed "-----------Start Removing Default Files-----------"
