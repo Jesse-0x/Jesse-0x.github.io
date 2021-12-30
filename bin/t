@@ -53,8 +53,8 @@ else
 	git commit -m "UPDATE.$(date)"
 	git push
 fi
-
-
+echoPrimary "--------------Recovering workspace!--------------"
+npm i
 
 echoPrimary "-----------------Finish Pushing!-----------------"
 echoPrimary "-----------------Have a nice day-----------------"
