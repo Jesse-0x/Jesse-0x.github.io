@@ -73,9 +73,10 @@ category_map:
   - [Operating System, Linux]
   - [Hardware, Disk]
   - [Data, MySQL]
+  - [Technology, 3D Modeling]
   - [Programing Language, Python, Java, Nodejs]
   - [Projects, Blog]
-  - [Tools, Github]
+  - [Tools, Github, Blender]
 tag_map:
   - Thoughts & ideas
   - Problems & Soultion
