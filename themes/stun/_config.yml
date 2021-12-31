@@ -247,8 +247,8 @@ footer:
     icp:
   # Any custom text (e.g. Hosted by <a href="https://pages.github.com/" rel="noopener" target="_blank">Github Pages</a>)
   custom:
-    enable: false
-    text:
+    enable: true
+    text: “The people who are crazy enough to think they can change the world are the ones who do.” — Steve Jobs
 
 # Creative Commons 4.0 International License
 creative_commons:

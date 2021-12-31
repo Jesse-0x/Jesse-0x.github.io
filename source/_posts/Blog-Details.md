@@ -1,8 +1,20 @@
+---
+title: Blog Details
+comments: true
+math: true
+quicklink: true
+date: 2021-10-3 12:14:30
+categories:
+tags:
+---
+
 # Jesse's Blog
 
 ![BLOG](https://github.com/jgong-whschool/jgong-whschool.github.io/raw/c19a7efd090cc55ca30985c9424897b725d30a65/source/images/BLOG.png)
 
 A personal blog using hexo and [Education Github Student pack](http://education.github.com).
+
+<!-- more -->
 
 ### Server
 

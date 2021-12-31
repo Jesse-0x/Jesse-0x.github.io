@@ -4,7 +4,6 @@ comments: true
 math: true
 quicklink: true
 date: 2020-9-30 18:04:37
-top_image: /images/bkg.png
 categories:
 tags:
 ---

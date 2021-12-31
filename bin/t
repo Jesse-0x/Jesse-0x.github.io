@@ -54,7 +54,7 @@ else
 	git push
 fi
 echoPrimary "--------------Recovering workspace!--------------"
-npm i
+cd $BLOGB; npm i
 
 echoPrimary "-----------------Finish Pushing!-----------------"
 echoPrimary "-----------------Have a nice day-----------------"
