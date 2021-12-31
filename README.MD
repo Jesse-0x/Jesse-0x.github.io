@@ -1,21 +1,10 @@
----
-title: Jesse's Blog
-comments: true
-math: true
-quicklink: true
-date: 2020-9-30 18:04:37
-top_image: /images/BLOG.png
-categories:
-tags:
----
-
-<!-- more -->
+# Jesse's Blog
 
 ![BLOG](https://github.com/jgong-whschool/jgong-whschool.github.io/raw/c19a7efd090cc55ca30985c9424897b725d30a65/source/images/BLOG.png)
 
 A personal blog using hexo and [Education Github Student pack](http://education.github.com).
 
-#### Server
+### Server
 
 Server: Github Pages
 
@@ -27,7 +16,7 @@ Extra: [Education Github Student pack](http://education.github.com)
 
 
 
-#### Web application
+### Web application
 
 Main language: [Node.Js 17](https://nodejs.org/)
 
@@ -39,7 +28,7 @@ Chat: [utterances](https://github.com/utterance)
 
 Backup Chat: [Disqus](https://disqus.com)
 
-Node package:
+###### Node package:
 
 ​	hexo-wordcount
 
@@ -53,16 +42,12 @@ Node package:
 
 ​	hexo-generator-search
 
-#### Licsence & copyright
+### Licsence & copyright
 
 [Hexo is licensed under the MIT License](https://github.com/hexojs/hexo/blob/master/LICENSE)
 
 [Theme Stun is licensed under the MIT License](https://github.com/liuyib/hexo-theme-stun/blob/master/LICENSE)
 
+Blog top background: ©Mikael Gustafsson
 
-
-Your advice are most welcome, I'll do my best!
-
-
-
-Thank you and wish you have a best day!
+Blog main page background: !Provided by API
