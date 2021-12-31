@@ -1,12 +1,14 @@
 ---
-title: My first Node server
+title: A node program using express
 comments: true
 math: true
 quicklink: true
 date: 2020-1-10 11:46:32
 excerpt: A node program using express
 categories:
+  - [Apple]
   - [Internet, Web Application]
+  - [Programing Language, JavaScript]
 tags: Experince & Guide
 
 ---
