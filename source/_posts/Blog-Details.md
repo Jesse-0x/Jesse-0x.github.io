@@ -3,7 +3,7 @@ title: Blog Details
 comments: true
 math: true
 quicklink: true
-date: 2021-10-3 12:14:30
+date: 2020-10-3 12:14:30
 categories: 
   - [Internet, Web Application]
   - [Projects, Blog]
