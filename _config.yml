@@ -68,7 +68,20 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  - [Apple, iOS Reverse, iOS Application Development, Mac Application Development]
+  - [Internet, Web Application, Internet Security, Techneque]
+  - [Operating System, Linux]
+  - [Hardware, Disk]
+  - [Data, MySQL]
+  - [Programing Language, Python, Java, Nodejs]
+  - [Projects, Blog]
+  - [Tools, Github]
 tag_map:
+  - Thoughts & ideas
+  - Problems & Soultion
+  - Experince & Guide
+  - Resource & Share
+  - Projects & Tools
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
