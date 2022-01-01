@@ -15,14 +15,13 @@ This is a list I'll try to update since I already had experince, I'll update mor
 
 - MacOS
   Including Solve Problems, WatchDog, Recover, Modify, Force Install on unsupported Mac, Install iOS App on Mac, and install a Windows on Mac.
-
   - MacOS Lion
   - MacOS Catalina
   - MacOS Big Sur
     - Force install to an Unsupported MacBook pro 2012 Late
   - MacOS Monterey
     - Every MacOS operating system that include Apache 2.4.48 will be affected (Tested on macOS Monterey 12.0.1 [21A559] )
-
+  
 - Windows
   - Windows10 on MacBook Pro 2012 Late
   - Windows11 on MacBook Air M1 2020 Late
@@ -119,11 +118,11 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - Xcode
 - MatLab
 - Unity
-- Blender
+- [Blender](/categories/Tools/Blender/)
 - More || All The Application on my Mac
 
 ### Data Storage
-- SQL
+- SQL DataBase
   - MySQL
   - PostgreSQL
 
@@ -151,7 +150,7 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - C#
 - Lua
 - ASM
-- Html/CSS/JavaScript
+- Html/CSS/[JavaScript](http://localhost:4000/categories/Programing-Language/JavaScript/)
 - And Much more If I touched
 
 ### Compiler
@@ -183,7 +182,7 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - Stack Overflow
 - Github
 
-## Internet
+## [Internet](/categories/Internet/)
 
 ### Security
 - Penetration testing
@@ -228,14 +227,14 @@ This is a list I'll try to update since I already had experince, I'll update mor
     - Azure
     - Heroku
     - DigitalOcean
-    - Github Pages
+    - [Github Pages](http://localhost:4000/categories/Tools/Github/)
 
   - Containers
     - Docker
     - Kubernetes
 
   - Back End
-    - Node.js
+    - [Node.js](/categories/Programing-Language/Nodejs/)
     - Apache
     - Python Tornado
     - Java Spring
@@ -273,14 +272,15 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - Cryptography
   - Base64
 
-### Professional Techniques
+### Other Techniques
 - Video Editing
 - Music & Audio Process
+- [3D Molding](/categories/Technology/3D-Modeling/)
 
 ### AI
 - Fundamental
 - Algorithm
-- Evirement
+- Environment 
 - Apply
 
 ### Robots
@@ -289,13 +289,13 @@ This is a list I'll try to update since I already had experince, I'll update mor
 ### Projects
 - Booking OS
 - Linect
+- [Jesse's Blog](/categories/Projects/Blog/)
 - BAIBall(Botball AI Training Environment)
 - Converter
 - Meeting arangement
 - Screen Translater
 - iPhone status editor
 - Shearch( Search Engine for search Engine)
-- 临朐(A project about my hometwon)
 - Union Base Code
 
 ### Little tools
@@ -311,10 +311,13 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - IPA install page
 - iPhone memory editor
 - Zoom Service
+- 临朐(A project about my hometwon)
 - Words Searcher
 - Chtrans (A Different Programing language)
 - FingerPad
 - iPhone GUI Modifier
 - Midi transform
 - WeChat API
+
+
 

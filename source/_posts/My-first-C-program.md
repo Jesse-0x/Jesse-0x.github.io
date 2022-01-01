@@ -6,7 +6,9 @@ quicklink: true
 date: 2019-11-10 21:46:32
 excerpt: My first C program & note
 categories:
+  - [Programing Language, C]
 tags:
+  - Experince & Guide
 ---
 
 <!-- more -->
