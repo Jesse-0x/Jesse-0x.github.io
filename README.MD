@@ -50,4 +50,4 @@ Backup Chat: [Disqus](https://disqus.com)
 
 Blog top background: ©Mikael Gustafsson
 
-Blog main page background: !Provided by API
+Blog main page background: ©Jesse Gong
