@@ -14,7 +14,7 @@ tags: [Projects & Tools, Web Application]
 
 # Jesse's Blog
 
-![BLOG](https://github.com/jgong-whschool/jgong-whschool.github.io/raw/c19a7efd090cc55ca30985c9424897b725d30a65/source/images/BLOG.png)
+![BLOG](https://github.com/Jesse-0x/Jesse-0x.github.io/raw/c19a7efd090cc55ca30985c9424897b725d30a65/source/images/BLOG.png)
 
 A personal blog using hexo and [Education Github Student pack](http://education.github.com).
 

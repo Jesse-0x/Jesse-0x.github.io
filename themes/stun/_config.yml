@@ -319,7 +319,7 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/jgong-whschool || fab fa-github
+  github: https://github.com/Jesse-0x || fab fa-github
   google: mailto:jgong@whschool.org || fab fa-google
   #twitter: https://twitter.com/ || fab fa-twitter
   #youtube: https://youtube.com/ || fab fa-youtube
@@ -566,9 +566,9 @@ disqus:
 utterances:
   enable: true
   # Github username.
-  owner: jgong-whschool
+  owner: Jesse-0x
   # Github repository.
-  repo: jgong-whschool.github.io
+  repo: Jesse-0x.github.io
   # Choose the mapping between blog posts and GitHub issues.
   # Optional values: pathname | url | title | og:title
   mapping: title

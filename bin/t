@@ -13,17 +13,17 @@ function echoPrimary(){
 echoPrimary "------------------Start Copying------------------"
 export BLOGB=~/Doc/Blog/Blog
 export BLOG=~/Doc/Blog/
-export GITBLOG=~/Doc/Blog/jgong-whschool.github.io
+export GITBLOG=~/Doc/Blog/Jesse-0x.github.io
 
 if [ ! -d "$GITBLOG" ]; then
 	echoPrimary " ---------------Initing file in Git---------------"
 	cd $BLOG
-	git clone https://github.com/jgong-whschool/jgong-whschool.github.io
+	git clone https://github.com/Jesse-0x/Jesse-0x.github.io
 elif [ ! -d "$GITBLOG/.git/" ]; then
 	echoPrimary "---------------Initing file in Git---------------"
 	cd $BLOG
 	rm -rv $GITBLOG
-	git clone https://github.com/jgong-whschool/jgong-whschool.github.io
+	git clone https://github.com/Jesse-0x/Jesse-0x.github.io
 fi
 
 if [ "`ls $GITBLOG| grep -v .git | xargs`" != "" ]; then
