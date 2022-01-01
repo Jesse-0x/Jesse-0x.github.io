@@ -340,7 +340,7 @@ social_setting:
 feed:
   enable: true
   # Enter your email subscription link (e.g. http://eepurl.com/guAE6j)
-  email: hi
+  email: NOT_DONE_YET
   # Enter the rss address of you set (e.g. /atom.xml)
   # Dependency: https://github.com/hexojs/hexo-generator-feed/
   # !!! Don't enable this before install dependency by `npm install hexo-generator-feed --save` in hexo root directory.
