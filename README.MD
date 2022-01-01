@@ -2,7 +2,9 @@
 
 ![BLOG](https://github.com/Jesse-0x/Jesse-0x.github.io/raw/c19a7efd090cc55ca30985c9424897b725d30a65/source/images/BLOG.png)
 
-A personal blog using hexo and [Education Github Student pack](http://education.github.com).
+A personal blog using hexo and [Education Github Student pack](http://education.github.com). Support online chat using [utterances](https://github.com/utterance) & [Disqus](https://disqus.com), support PWA(Progressive Web Apps), website information analyzes use google and more.
+
+If you like it, pls give me a <a class="github-button" href="https://github.com/Jesse-0x/Jesse-0x.github.io" data-size="large" data-show-count="true" aria-label="Star Jesse-0x/Jesse-0x.github.io on GitHub">Star</a>!
 
 ### Server
 

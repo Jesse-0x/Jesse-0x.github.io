@@ -28,7 +28,7 @@ fi
 
 if [ "`ls $GITBLOG| grep -v .git | xargs`" != "" ]; then
   echoPrimary "------------Git folder is not empty------------"
-  cd $GITBLOG; rm -rv `ls $GITBLOG| grep -v .git | xargs`
+  cd $GITBLOG; rm -rfv `ls $GITBLOG| grep -v .git | xargs`
 fi
 
 echoPrimary " -----------Copying files to Git folder-----------"
