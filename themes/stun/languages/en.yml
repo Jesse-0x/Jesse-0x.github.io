@@ -4,7 +4,7 @@ title:
   archive: Archive
   category: Category
   tag: Tag
-  moment: Momont
+  moment: Moment
 
 # Header nav
 nav:
@@ -22,7 +22,7 @@ menu:
   Jesse-2thoughts: Ideas
   Jesse-3site: Site
   Projects: Projects
-  Momtents: Momonts
+  Momtents: Moments
 
 # Archives page, Categories page, Tags page
 page:

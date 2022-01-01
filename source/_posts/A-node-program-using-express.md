@@ -4,7 +4,6 @@ comments: true
 math: true
 quicklink: true
 date: 2020-1-10 11:46:32
-excerpt: A node program using express
 categories:
   - [Apple]
   - [Internet, Web Application]
@@ -210,4 +209,3 @@ Error: listen EADDRINUSE: address already in use :::3000
 ```
 
 This means your "3000" port already been used, you can change 3000 in this  `app.listen(3000, ...` in to another number that don't havr this problem, such as 4000
-
