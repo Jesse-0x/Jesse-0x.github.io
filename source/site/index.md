@@ -1,7 +1,7 @@
 ---
 title: About this site
-powered: true
-theme: true
+powered.enable: true
+theme.enable: true
 commets: false
 date: 2021-12-29 10:38:35
 ---
