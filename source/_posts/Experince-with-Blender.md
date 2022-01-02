@@ -1,5 +1,5 @@
 ---
-title: Experince with Blender
+title: Experience with Blender
 comments: true
 math: true
 quicklink: true
@@ -7,20 +7,20 @@ date: 2020-5-7 13:30:27
 categories:
   - [Technology, 3D Modeling]
   - [Tools, Blender]
-tags: Experince & Guide
+tags: Experience & Guide
 ---
 
 ![Blender](/images/blender/Blender.png)
 
-Last month I my Art teacher assigned me sketch book homework, and also I was always want to try 3D modeling by myself. I watched this [YouTuber's](https://www.youtube.com/user/AndrewPPrice) video, and made the thing above.
+Last month my Art teacher assigned me sketchbook homework, and I have always wanted to try 3D modeling by myself. I watched this [YouTuber's](https://www.youtube.com/user/AndrewPPrice) video, and made the thing above.
 
 <!-- more -->
 
-I had a 3D printer in my home since I was in 5th grade, and I also printed lots of thing. Before, all the 3D models was downloaded from internet, and this is the first 3D object made myself (even though I just follow the video :joy:)<br><br>
+I had a 3D printer in my home since I was in 5th grade, and I also printed lots of things. Before, all the 3D models was downloaded from internet, and this is the first 3D object made myself (even though I just follow the video :joy:)<br><br>
 
 ### Blender
 
-[Blender](https://www.blender.org/) is a powerful open source tool made by python, and contains may features. Incuding
+[Blender](https://www.blender.org/) is a powerful open source tool made by python, and contains many features. Including
 
 ##### [Rendering](https://www.blender.org/features/rendering/)
 
@@ -68,17 +68,17 @@ Because of its custom architecture, Blender’s UI, window layout and shortcuts 
 
  （reference: https://www.blender.org/features/)
 
- <br>	<br>And one of my favorite thing about this softerware is wrote in python. It allows people to add plug-in in to the application.
+ <br>	<br>And one of my favorite things about this software is written in python. It allows people to add plug-in into the application.
 
-For example, using a plug-in conver Mincraft map into 3D models (I don't play minecraft so if there is any problems please ignore)
+For example, using a plug-in convert Minecraft map into 3D models (I don't play minecraft so if there is any problems please ignore)
 
 ![untitled](/images/blender/untitled.png)
 
 --------
 
-Eventually, there are also many different 3D modeling softerware
+Eventually, there are also many different 3D modeling software
 
-E.g.C4D, TinkerCAD, OnShape, SolidWorks(I saw My father using this) and more. Compare to these softerware, blender is more easy getting start to use. It is also free, open source, and provide plenty of professinal function and units. Blender also can make videos, calculate simulation, Animation and more. 
+E.g.C4D, TinkerCAD, OnShape, SolidWorks(I saw My father using this) and more. Compared to these software, blender is easier to start using. It is also free, open source, and provides plenty of professional functions and units. Blender also can make videos, calculate simulation, Animation and more.
 
 (More picture of my doughnut:doughnut:)
 

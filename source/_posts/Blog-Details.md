@@ -22,15 +22,15 @@ A personal blog using hexo and [Education Github Student pack](http://education.
 
 This is my personal blog, I'll update my
 
-  - Problems & Soultion
-  - Experince & Guide
+  - Problems & Solution
+  - Experience & Guide
   - Resource & Share
   - Projects & Tools
   - Thoughts & ideas
 
 As much as I can.
 
-This website support online chat using [utterances](https://github.com/utterance) & [Disqus](https://disqus.com), support PWA(Progressive Web Apps), website information analyzes use google and more.
+This website supports online chat using [utterances](https://github.com/utterance) & [Disqus](https://disqus.com), support PWA(Progressive Web Apps), website information analyzes use google and more.
 
 If you like it, pls give me a <a class="github-button" href="https://github.com/Jesse-0x/Jesse-0x.github.io" data-size="large" data-show-count="true" aria-label="Star Jesse-0x/Jesse-0x.github.io on GitHub">Star</a>!
 

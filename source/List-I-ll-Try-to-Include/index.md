@@ -7,14 +7,14 @@ date: 2006-10-12 00:00:00
 toc: true
 ---
 
-This is a list I'll try to update since I already had experince, I'll update more If I can
+This is a list I'll try to update since I already had experienced, I'll update more If I can
 
 ## Software & Hardware
 
 ### Operating Systems
 
 - MacOS
-  Including Solve Problems, WatchDog, Recover, Modify, Force Install on unsupported Mac, Install iOS App on Mac, and install a Windows on Mac.
+  Including Solve Problems, WatchDog, Recover, Modify, Force Install on unsupported Mac, Install iOS App on Mac, and install Windows on Mac.
   - MacOS Lion
   - MacOS Catalina
   - MacOS Big Sur
@@ -220,7 +220,7 @@ This is a list I'll try to update since I already had experince, I'll update mor
     - Ubuntu Server 14.04
     - Ubuntu Server 18.04
     - Ubuntu Server 20.04
-    - Debain 10
+    - Debian 10
     - CentOS 7
 
   - Hosts
@@ -293,14 +293,14 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - BAIBall(Botball AI Training Environment)
 - Converter
 - Meeting arangement
-- Screen Translater
+- Screen Translate\or
 - iPhone status editor
 - Shearch( Search Engine for search Engine)
 - Union Base Code
 
 ### Little tools
-- Password Creater
-- Chrome Dino Runer
+- Password Creator
+- Chrome Dino Runner
 - SQL Search
 - Google Form auto filler
 - From Auto sender
@@ -311,7 +311,7 @@ This is a list I'll try to update since I already had experince, I'll update mor
 - IPA install page
 - iPhone memory editor
 - Zoom Service
-- 临朐(A project about my hometwon)
+- 临朐(A project about my hometown)
 - Words Searcher
 - Chtrans (A Different Programing language)
 - FingerPad

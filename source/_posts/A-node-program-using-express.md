@@ -8,23 +8,23 @@ categories:
   - [Apple]
   - [Internet, Web Application]
   - [Programing Language, JavaScript]
-tags: Experince & Guide
+tags: Experience & Guide
 
 ---
 
-[Node.js](https://nodejs.org/)® is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/), and it is Foundated by © OpenJS Foundation. Many web application use it, such as LinkedIn, Netflix, PayPal, NASA and more.
+[Node.js](https://nodejs.org/)® is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/), and it is Founded by © OpenJS Foundation. Many web applications use it, such as LinkedIn, Netflix, PayPal, NASA and more.
 
 <!-- more -->
 
-## Node.js running Evirement
+## Node.js running **Environment**
 
-My device is MacBook Pro Late 2012, and installed Xcode & Developer Command Line tools.
+My device is a MacBook Pro Late 2012, and installed Xcode & Developer Command Line tools.
 
 ### Install Xcode & Command Line Tools
 
-Xcode can be installed from [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835), or from [Apple Deverloper](https://developer.apple.com/download) download Xcode beta (Need Apple Developer account).
+Xcode can be installed from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835), or from [Apple Developer](https://developer.apple.com/download) download Xcode beta (Need Apple Developer account).
 
-After install Xcode please run at least one time in order to agree agreement.
+After installing Xcode please run at least one time in order to agree to. the agreement.
 
 Command Line tools can be installed from Terminal
 
@@ -44,7 +44,7 @@ Tips: If u meet any problems, please check the following guide.
 
 `Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn´t include with macOS. It can also install software not packaged for your Linux distribution to your home directory without requiring sudo.`(Source `man brew`)
 
-Homebrew require Xcode & Command Line Tools, after installization, please run the following command inside macOS Terminal or linux terminal:
+Homebrew require Xcode & Command Line Tools, after installation, please run the following command inside macOS Terminal or linux terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -104,7 +104,7 @@ After Initialization, the directory should have a file called `package.json`, an
 npm install express --save
 ```
 
-This means it will install express and save to `package.json` file,  package.json is like a main configuration of your node project.
+This means it will install express and save to `package.json` file,  package.json is like the main configuration of your node project.
 
 ### Simple Example of using node
 
@@ -120,25 +120,25 @@ Open the `index.js` file inside your node directory, Import express modules, and
 var express = require('express');
 ```
 
-Call express, at this moment it is a function. When it was called with out parameter, it will returns a express, and gives it to `app`.
+Call express, at this moment it is a function. When it is called without a parameter, it will return an express, and give it to the `app`.
 
 ```js
 var app = express();
 ```
 
-Basiclly every time use `app.*` equals to use `express`.
+Basically every time I use `app.*` equals using `express`.
 
 </br>
 
-Now this `app` include many method, including `get`, `post`, `put`/`patch`, `delete`. Now using `get` method, point out `/` and give a `handler` function
+Now this `app` includes many methods, including `get`, `post`, `put`/`patch`, `delete`. Now using `get` method, point out `/` and give a `handler` function
 
-this handler will receive req and res this two object, they are the request for `request` & `response`. And this request will include all the information send out by the browser, such as `query`,` body` and `headers`. They all can be get from `req` object
+this handler will receive req and res these two objects, they are the request for `request` & `response`. And this request will include all the information sent out by the browser, such as `query`,` body` and `headers`. They all can be get from `req` object
 
 </br>
 
 
 
-For res object, we don't read message from it, but we use it to output information toward browser. For example, header information. E.g using `#send` method, send a string to broswer
+For res objects, we don't read messages from it, but we use it to output information toward the browser.. For example, header information. E.g using `#send` method, send a string to browser
 
 ```js
 app.get('/', function (req, res) {
@@ -152,7 +152,7 @@ app.get('/', function (req, res) {
 
 
 
-After we defined the actions of app, make it listen local port (3000 at this point). The second function at here is Callback function, it will tell the listen action is finish.
+After we define the actions of the app, make it listen to the local port (3000 at this point). The second function here is the Callback function, it will tell the listen action is finished.
 
 ```js
 app.listen(3000, function () {
@@ -208,4 +208,4 @@ Error: listen EADDRINUSE: address already in use :::3000
 
 ```
 
-This means your "3000" port already been used, you can change 3000 in this  `app.listen(3000, ...` in to another number that don't havr this problem, such as 4000
+This means your "3000" port already been used, you can change 3000 in this  `app.listen(3000, ...` in to another number that don't have this problem, such as 4000
