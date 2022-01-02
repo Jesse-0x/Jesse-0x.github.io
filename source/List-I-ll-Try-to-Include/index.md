@@ -227,7 +227,7 @@ This is a list I'll try to update since I already had experince, I'll update mor
     - Azure
     - Heroku
     - DigitalOcean
-    - [Github Pages](http://localhost:4000/categories/Tools/Github/)
+    - [Github Pages](/categories/Tools/Github/)
 
   - Containers
     - Docker
