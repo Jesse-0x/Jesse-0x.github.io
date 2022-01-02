@@ -18,5 +18,4 @@ I'm just a normal student with wired ideas and always want to help other people 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jesse-0x&repo=Jesse-0x.github.io)](https://github.com/Jesse-0x/Jesse-0x.github.io)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=jesse-0x&repo=bteuch)](https://github.com/Jesse-0x/bteuch)
 
-And Here are some stuff I intersted & Some skill I know:
-
+And [Here](/List-I-ll-Try-to-Include/) are some stuff I intersted & Some skill I know:
