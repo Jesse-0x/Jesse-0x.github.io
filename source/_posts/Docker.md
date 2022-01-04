@@ -3,6 +3,7 @@ title: Docker
 comments: true
 math: true
 quicklink: true
+top_image: https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png
 date: 2020-11-04 11:52:07
 categories:
      - [Technology, LXC]
@@ -19,7 +20,7 @@ tags:
 A good solution toward developement
 
 <!-- more -->
-
+![image](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
 Many people said Docker gonna change the world since 2013 it realse, but what it actually helped?
 
 ## 0x01 Develop
