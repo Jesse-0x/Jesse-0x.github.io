@@ -130,7 +130,7 @@ This is a list I'll try to update since I already had experienced, I'll update m
   - File magic number
   - File format
 
-### Develope
+### Develop
 - Operating System
   - Booting
     - Gurb

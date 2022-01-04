@@ -1,6 +1,6 @@
 category_map:
   - [Apple, iOS Reverse, iOS Application Development, Mac Application Development]
-  - [Internet, Web Application, Internet Security, Techneque, Develope, Using]
+  - [Internet, Web Application, Internet Security, Techneque, Develop, Using]
   - [Operating System, Linux, MacOS, Windows, iOS]
   - [Hardware, Disk, Booting, RAM]
   - [Data, Data Recovery, DataBase, File, Cryptography]
@@ -9,7 +9,7 @@ category_map:
   - [Share, Applications]
   - [Robots]
   - [Programing Language, Shell, Python, Java, JavaScript, C, C++, C#, Lua, ASM, Html, CSS, JavaScript]
-  - [Program Develope, Compiler, Tools, IDE, Help]
+  - [Program Develop, Compiler, Tools, IDE, Help]
   - [Projects, Booking OS, Linect, Blog, BAIBall, Converter, Meeting arangement, Screen Translater, iPhone status editor, Shearch, Union Base Code, Online Destop]
   - [Little Tools, Password Creater, Chrome Dino Runer, SQL Search, Google Form auto filler, From Auto sender, Muti file name changer, icon Maker]
   - [Tools, Github, Blender]

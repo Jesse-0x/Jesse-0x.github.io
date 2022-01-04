@@ -1,5 +1,5 @@
 ---
-title: Onlline Desktop
+title: Online Desktop
 comments: true
 math: true
 quicklink: true
@@ -8,7 +8,7 @@ top_image: /images/Online-Desktop/Online-Desktop.png
 categories:
   - [Internet, Web Application]
   - [Operating System, Linux]
-  - [Projects, Online Destop]
+  - [Projects, Online Desktop]
   - [Tools, Docker]
 tags:
   - Projects & Tools
@@ -27,11 +27,11 @@ A online KDE Desktop website can use for work
 
 
 
-This is a Desktop use docker, KDE neon offical docker image and GUI memu, also x11vnc, and [noVNC](https://github.com/novnc/noVNC)
+This is a Desktop use docker, KDE neon official docker image and GUI memu, also x11vnc, and[ noVNC](https://github.com/novnc/noVNC)https://github.com/novnc/noVNC)
 
 ### Quick start
 
-I was apply it to heroku, so please change the `$PORT` following files in order to run, or give a PORT value.
+I was applying it to heroku, so please change the $PORT following files in order to run, or give a PORT value.
 
 ```
 app/conf.dwebsockify.sh
@@ -43,19 +43,19 @@ and start running using docker.
 
 https://online-desktop.herokuapp.com/vnc.html
 
-please be patient because it need at least 2 min to start (the file was over large.)
+Please be patient because it needs at least 2 min to start (the file was over large.)
 
-and click the setting botton on the sidebar, change `Scaling Mode` in to `local scaling`, then click connect botton.
-
-</br>
+and click the setting button on the sidebar, change `Scaling Mode` in to `local scaling`, then click connect botton.
 
 </br>
 
-Basically, it is a docker container that build a GUI Desktop and use VNC service to display it out, and use noVNC as the client to build it in to heroku.
+</br>
+
+Basically, it is a docker container that builds a GUI Desktop and uses VNC service to display it out, and uses noVNC as the client to build it into heroku.
 
 ![image](/images/Online-Desktop/build.png)
 
-This project took me lots of times, every little changes require a build, and every build envitually tooks me 2058.7s, which is about 35 minutes... If you like the project, please give me a [star](https://github.com/Jesse-0x/Online-Desktop)!
+This project took me lots of time, every little change required a build, and every build envitually tooks me 2058.7s, which is about 35 minutes... If you like the project, please give me a[ star](https://github.com/Jesse-0x/Online-Desktop)!
 
 ### Extra
 

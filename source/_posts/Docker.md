@@ -8,7 +8,7 @@ date: 2020-11-04 11:52:07
 categories:
      - [Technology, LXC]
      - [Operating System, Linux]
-     - [Program Develope, Environment]
+     - [Program Develop, Environment]
      - [Tools, Docker]
 tags:
      - Experience & Guide
@@ -17,37 +17,37 @@ tags:
 
 # Docker
 
-A good solution toward developement
+A good solution toward development
 
 <!-- more -->
 ![image](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
-Many people said Docker gonna change the world since 2013 it realse, but what it actually helped?
+Many people said Docker is gonna change the world since its 2013 release, but what has actually helped?
 
 ## 0x01 Develop
 
 ### Environment
 
-One big problem for develop is environment congifuration. Every computer uses' environment is different. If the program can run under this environment, we can't sure it will run under another enviroment. 
+One big problem for development is environment configuration. Every computer uses' environment is different. If the program can run under this environment, we can't be sure it will run under another environment.
 
-Must make sure the operating system's setting and different library's install. For example, in order to run a python program, user must have python engine, and different dependinces. It is also takes time, require update, diffcult, and other bunch of different problems.
+Must make sure the operating system's settings and different libraries are installed. For example, in order to run a python program, a user must have a python engine, and different dependencies. It also takes time, requires updating, is difficult, and has a bunch of different problems.
 
 ### Virtual Machine
 
-So Virtual Machine is a solution to instill with environment. It allows to run a OS inside another os. Such as run Windows in mac. Facing to the OS, virtual Machine is a normal file, not gonna effect any thing.
+So Virtual Machine is a solution to install with the environment. It allows you to run an OS inside another os. Such as running Windows in mac. Facing the OS, Virtual Machine is a normal file, not gonna affect anything.
 
-**However,** it require much much more resource than actually the program needed. Because a OS also running other programs. Also other OS level steps can't skip, e.g login. take long time to boot, large disk file...
+**However,** it requires much much more resources than actually the program needed. Because an OS also runs other programs. Also other OS level steps can't skip, e.g login. takes a long time to boot, a large disk file...
 
 ### LXC(Linux Containers)
 
-Cause Virtual Machine's problems, Linux developed Linux Containers. It is **not a full operating system**, it is more like a protection. Quarting the process to the program. Since the Containers is a process, it boot faster, not require many resource, small size, and more.
+Because of Virtual Machine's problems, Linux developed Linux Containers. It is **not a full operating system**, it is more like a protection. Quartering the process to the program. Since the Containers is a process, it boots faster, does not require many resources, small size, and more.
 
-It is like a lite Virtual Machine can provide Virtual environment with less requirement.
+It is like a lite Virtual Machine that can provide a Virtual environment with less requirement.
 
 ## 0x02 Docker
 
-Docker is a package for Linux Containers, it provide more easy API to the Containers, and the most popular solution for LXC.
+Docker is a package for Linux Containers, it provides a more easy API to the Containers, and the most popular solution for LXC.
 
-Docker is verrrry easy to use, run and control. And a docker image is also easy to duplicate, share, edit and manage, just like a code.
+Docker is verrrrry easy to use, run and control. And a docker image is also easy to duplicate, share, edit and manage, just like a code.
 
 ### Installation
 
@@ -209,9 +209,9 @@ EXPOSE 1234				#expose port 1234, allow outside to connect the 1234 port inside 
 
 ### Build
 
-And now can build the image use `docker image build .`
+And now can build the image using `docker image build .`
 
-And now use `docker image ls` to see the image you just build. 
+And now use `docker image ls` to see the image you just built. 
 
 ### Run
 
