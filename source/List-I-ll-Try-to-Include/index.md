@@ -293,10 +293,11 @@ This is a list I'll try to update since I already had experienced, I'll update m
 - BAIBall(Botball AI Training Environment)
 - Converter
 - Meeting arangement
-- Screen Translate\or
+- Screen Translateor
 - iPhone status editor
 - Shearch( Search Engine for search Engine)
 - Union Base Code
+- Online Desktop
 
 ### Little tools
 - Password Creator
