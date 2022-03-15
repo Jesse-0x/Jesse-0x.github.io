@@ -3,3 +3,4 @@ set -e;
 hexo g
 cp source/manifest.json public/manifest.json
 cp CNAME public/CNAME 
+cp source/Test/Three/dist/main.js public/Test/Three/dist/main.js

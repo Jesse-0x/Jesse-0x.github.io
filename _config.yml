@@ -28,7 +28,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "nt/**/*"
+skip_render: 
+  - 'Test/Three/index.html'
+  - 'Test/Three/dist/*'
 
 # Writing
 new_post_name: :title.md #!!!NEED CHANGE!!!
@@ -167,6 +169,7 @@ feed:
     wrapGenerate: true
     options:
       offlineGoogleAnalytics: true
+
 
 search:
   path: search.json
