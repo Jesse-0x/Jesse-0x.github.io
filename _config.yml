@@ -28,7 +28,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "nt/**/*"
+skip_render: 
+  - 'Test/Three/index.html'
+  - 'Test/Three/dist/*'
 
 # Writing
 new_post_name: :title.md #!!!NEED CHANGE!!!
@@ -68,7 +70,29 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  - [Apple, iOS Reverse, iOS Application Development, Mac Application Development]
+  - [Internet, Web Application, Internet Security, Techneque, Develop, Using]
+  - [Operating System, Linux, MacOS, Windows, iOS]
+  - [Hardware, Disk, Booting, RAM]
+  - [Data, Data Recovery, DataBase, File, Cryptography]
+  - [Technology, 3D Modeling, Data Recovery, Video Editing, Music & Audio Process, LXC]
+  - [AI, Fundamental, Algorithm, Environment, Apply]
+  - [Share, Applications]
+  - [Applications, Three.js]
+  - [Robots]
+  - [Programing Language, Shell, Python, Java, JavaScript, C, C++, C#, Lua, ASM, Html, CSS, JavaScript]
+  - [Program Develop, Compiler, Tools, IDE, Help, Environment]
+  - [Projects, Booking OS, Linect, Blog, BAIBall, Converter, Meeting arangement, Screen Translater, iPhone status editor, Shearch, Union Base Code, Online Destop]
+  - [Little Tools, Password Creater, Chrome Dino Runer, SQL Search, Google Form auto filler, From Auto sender, Muti file name changer, icon Maker]
+  - [Tools, Github, Blender, Docker]
+  - [Little Projects, IPA install page, iPhone memory editor, Zoom Service, 临朐, Words Searcher, Chtrans, FingerPad, iPhone GUI Modifier, Midi transform, WeChat API]
+
 tag_map:
+  - Thoughts & ideas
+  - Problems & Soultion
+  - Experience & Guide
+  - Resource & Share
+  - Projects & Tools
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -146,6 +170,7 @@ feed:
     wrapGenerate: true
     options:
       offlineGoogleAnalytics: true
+
 
 search:
   path: search.json

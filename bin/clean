@@ -6,31 +6,43 @@ function echoRed(){
 }
 
 echoRed "------------------Start Cleaning------------------"
+
+cd $BLOGB
+#if [ ! -f ".DS_Store" ] && [ ! -d "public/" ]; then 
+#	echoRed "-----------------Cleans Up Finish-----------------"
+#	echoRed "-----------------Have a nice day!-----------------"
+#	exit 0
+#fi 
+
 export BLOGB=~/Doc/Blog/Blog
 export BLOG=~/Doc/Blog/
 
 cd $BLOGB
 if [ ! -d "node_modules/" ]; then 
-	echoRed "------Node not detected, Start install nodes------"
-	npm i
+	if [ ! -n "$1" ] ;then
+		echoRed "------Node not detected, Start install nodes------"
+		npm i
+		echoRed "---------------Starts Hexo cleaning---------------"
+		hexo clean
+	fi
 fi 
-
-echoRed "---------------Starts Hexo cleaning---------------"
-hexo clean
 
 echoRed "-----------Start Removing Default Files-----------"
 find $BLOGB -name ".DS_Store"  | xargs rm -v
 find $BLOGB -name "Thumbs.db"  | xargs rm -v
+find $BLOGB -name "db.json"  | xargs rm -v
 
 echoRed "------------Start Removing Cache Files------------"
-find $BLOGB -name "db.json"  | xargs rm -v
-find $BLOGB -name "package-lock.json"  | xargs rm -v
+find $BLOGB -name "package-lock.json"  | xargs rm -rv 
 find $BLOGB -name "*.log"  | xargs rm -v
 
-if [ -d "node_modules/" ]; then 
-	echoRed "---------------Removing Node Module---------------"
-	rm -rv node_modules
-fi 
+
+if [ -n "$1" ] ;then
+	if [ -d "node_modules/" ]; then 
+		echoRed "---------------Removing Node Module---------------"
+		rm -rv node_modules
+	fi 
+fi
 
 if [ -d "public/" ]; then 
 	echoRed "--------------Removing Hexo Generate--------------"
