@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jessse.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine, and it is Founded by © OpenJS Foundation. Many web applications use it, such as LinkedIn, Netflix, PayPal, NASA and more.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A node program using express">
+<meta property="og:url" content="https://jessse.me/2020/01/10/">
+<meta property="og:site_name" content="Jesse&#39;s Blog">
+<meta property="og:description" content="Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine, and it is Founded by © OpenJS Foundation. Many web applications use it, such as LinkedIn, Netflix, PayPal, NASA and more.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jessse.me/images/Node/Lesson.png">
+<meta property="article:published_time" content="2020-01-10T16:46:32.000Z">
+<meta property="article:modified_time" content="2022-06-11T00:45:37.346Z">
+<meta property="article:author" content="Jesse Gong">
+<meta property="article:tag" content="Experience &amp; Guide">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jessse.me/images/Node/Lesson.png">
+
+
+<link rel="canonical" href="https://jessse.me/2020/01/10/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://jessse.me/2020/01/10/","path":"2020/01/10/","title":"A node program using express"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>A node program using express | Jesse's Blog</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start --><link rel="manifest" href="/manifest.json" /><!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="Jesse's Blog" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jesse's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-running-Environment"><span class="nav-number">1.</span> <span class="nav-text">Node.js running Environment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Xcode-amp-Command-Line-Tools"><span class="nav-number">1.1.</span> <span class="nav-text">Install Xcode &amp; Command Line Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-HomeBrew"><span class="nav-number">1.2.</span> <span class="nav-text">Install HomeBrew</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Node"><span class="nav-number">1.3.</span> <span class="nav-text">Install Node</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-Node"><span class="nav-number">2.</span> <span class="nav-text">Using Node</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Initialization-Node"><span class="nav-number">2.1.</span> <span class="nav-text">Initialization Node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-Directory"><span class="nav-number">2.2.</span> <span class="nav-text">Node Directory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Simple-Example-of-using-node"><span class="nav-number">2.3.</span> <span class="nav-text">Simple Example of using node</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Full-Script"><span class="nav-number">2.3.1.</span> <span class="nav-text">Full Script:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-might-encounter"><span class="nav-number">2.4.</span> <span class="nav-text">Problems might encounter</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jesse Gong</p>
+  <div class="site-description" itemprop="description">Nice to meet u! This is my Blog! :b</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jessse.me/2020/01/10/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jesse Gong">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jesse's Blog">
+      <meta itemprop="description" content="Nice to meet u! This is my Blog! :b">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="A node program using express | Jesse's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          A node program using express
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-01-10 11:46" itemprop="dateCreated datePublished" datetime="2020-01-10T11:46:32-05:00">2020-01-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-06-10 20:45" itemprop="dateModified" datetime="2022-06-10T20:45:37-04:00">2022-06-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Apple/" itemprop="url" rel="index"><span itemprop="name">Apple</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Internet/" itemprop="url" rel="index"><span itemprop="name">Internet</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Internet/Web-Application/" itemprop="url" rel="index"><span itemprop="name">Web Application</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Programing-Language/" itemprop="url" rel="index"><span itemprop="name">Programing Language</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Programing-Language/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>® is a JavaScript runtime built on <a target="_blank" rel="noopener" href="https://v8.dev/">Chrome’s V8 JavaScript engine</a>, and it is Founded by © OpenJS Foundation. Many web applications use it, such as LinkedIn, Netflix, PayPal, NASA and more.</p>
+<span id="more"></span>
+
+<h2 id="Node-js-running-Environment"><a href="#Node-js-running-Environment" class="headerlink" title="Node.js running Environment"></a>Node.js running <strong>Environment</strong></h2><p>My device is a MacBook Pro Late 2012, and installed Xcode &amp; Developer Command Line tools.</p>
+<h3 id="Install-Xcode-amp-Command-Line-Tools"><a href="#Install-Xcode-amp-Command-Line-Tools" class="headerlink" title="Install Xcode &amp; Command Line Tools"></a>Install Xcode &amp; Command Line Tools</h3><p>Xcode can be installed from the <a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/xcode/id497799835">Mac App Store</a>, or from <a target="_blank" rel="noopener" href="https://developer.apple.com/download">Apple Developer</a> download Xcode beta (Need Apple Developer account).</p>
+<p>After installing Xcode please run at least one time in order to agree to. the agreement.</p>
+<p>Command Line tools can be installed from Terminal</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Tips: If u meet any problems, please check the following guide.</p>
+<h3 id="Install-HomeBrew"><a href="#Install-HomeBrew" class="headerlink" title="Install HomeBrew"></a>Install HomeBrew</h3><p><a target="_blank" rel="noopener" href="http://brew.sh/">Brew</a></p>
+<p><code>The Missing Package Manager for macOS (or Linux)</code></p>
+<p><code>Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn´t include with macOS. It can also install software not packaged for your Linux distribution to your home directory without requiring sudo.</code>(Source <code>man brew</code>)</p>
+<p>Homebrew require Xcode &amp; Command Line Tools, after installation, please run the following command inside macOS Terminal or linux terminal:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c <span class="string">"<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>(Please take <a target="_blank" rel="noopener" href="https://brew.sh/">this</a> as the standard)</p>
+<p>Tips: If u meet any problems, please check the following guide.</p>
+<h3 id="Install-Node"><a href="#Install-Node" class="headerlink" title="Install Node"></a>Install Node</h3><p>After both Command Line Tools &amp; HomeBrew installed, please run</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></tbody></table></figure>
+
+<p>It will automatically install node.</p>
+<p>If you want to check, you can run <code>node -v</code> to see the version of your node.</p>
+<h2 id="Using-Node"><a href="#Using-Node" class="headerlink" title="Using Node"></a>Using Node</h2><h3 id="Initialization-Node"><a href="#Initialization-Node" class="headerlink" title="Initialization Node"></a>Initialization Node</h3><p>Npn is a javascript package manager made for node.</p>
+<p>open a directory you want to work with, and open it by type in<code>cd</code> + <code>the name of your directory</code></p>
+<p>and then Open terminal, type in</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></tbody></table></figure>
+
+<p> it will help you to create a directory using node, just follow all the step show on the terminal( Normally just type enter until finish)</p>
+<p>E.G I created a directory called <code>Lesson</code>, I need to type in </p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Lesson</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="Node-Directory"><a href="#Node-Directory" class="headerlink" title="Node Directory"></a>Node Directory</h3><p>After Initialization, the directory should have a file called <code>package.json</code>, and now you should type in </p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install express --save</span><br></pre></td></tr></tbody></table></figure>
+
+<p>This means it will install express and save to <code>package.json</code> file,  package.json is like the main configuration of your node project.</p>
+<h3 id="Simple-Example-of-using-node"><a href="#Simple-Example-of-using-node" class="headerlink" title="Simple Example of using node"></a>Simple Example of using node</h3><p>Type in the following to create a <code>index.js</code> file, as the main program of the node</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> index.js</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Open the <code>index.js</code> file inside your node directory, Import express modules, and give it to variable <code>express </code></p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Call express, at this moment it is a function. When it is called without a parameter, it will return an express, and give it to the <code>app</code>.</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="title function_">express</span>();</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Basically every time I use <code>app.*</code> equals using <code>express</code>.</p>
+<br>
+
+<p>Now this <code>app</code> includes many methods, including <code>get</code>, <code>post</code>, <code>put</code>/<code>patch</code>, <code>delete</code>. Now using <code>get</code> method, point out <code>/</code> and give a <code>handler</code> function</p>
+<p>this handler will receive req and res these two objects, they are the request for <code>request</code> &amp; <code>response</code>. And this request will include all the information sent out by the browser, such as <code>query</code>,<code> body</code> and <code>headers</code>. They all can be get from <code>req</code> object</p>
+<br>
+
+
+
+<p>For res objects, we don’t read messages from it, but we use it to output information toward the browser.. For example, header information. E.g using <code>#send</code> method, send a string to browser</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">get</span>(<span class="string">'/'</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) {</span><br><span class="line">  res.<span class="title function_">send</span>(<span class="string">'Hello World'</span>);</span><br><span class="line">}); </span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<br>
+
+
+
+<p>After we define the actions of the app, make it listen to the local port (3000 at this point). The second function here is the Callback function, it will tell the listen action is finished.</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>, <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'app is listening at port 3000'</span>);</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<h4 id="Full-Script"><a href="#Full-Script" class="headerlink" title="Full Script:"></a>Full Script:</h4><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">'/'</span>, <span class="keyword">function</span> (<span class="params">req, res</span>) {</span><br><span class="line">  res.<span class="title function_">send</span>(<span class="string">'Hello World'</span>);</span><br><span class="line">}); </span><br><span class="line"></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">3000</span>, <span class="keyword">function</span> (<span class="params"></span>) {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'app is listening at port 3000'</span>);</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+
+<p>and after editing the index.js file, save it, and run it</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node index.js</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Now open your browser, type in <a target="_blank" rel="noopener" href="http://localhost:3000/">http://localhost:3000/</a> to see your website, and it should look like this:</p>
+<p><img src="/images/Node/Lesson.png" alt="Lesson"></p>
+<h3 id="Problems-might-encounter"><a href="#Problems-might-encounter" class="headerlink" title="Problems might encounter"></a>Problems might encounter</h3><p>When you start your node program, it might show something like this:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">node:events:*</span><br><span class="line">      throw er; // Unhandled <span class="string">'error'</span> event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: listen EADDRINUSE: address already <span class="keyword">in</span> use :::3000</span><br><span class="line">.......</span><br><span class="line">{</span><br><span class="line">  code: <span class="string">'EADDRINUSE'</span>,</span><br><span class="line">  errno: -48,</span><br><span class="line">  syscall: <span class="string">'listen'</span>,</span><br><span class="line">  address: <span class="string">'::'</span>,</span><br><span class="line">  port: 3000</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<p>This means your “3000” port already been used, you can change 3000 in this  <code>app.listen(3000, ...</code> in to another number that don’t have this problem, such as 4000</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Experience-Guide/" rel="tag"># Experience & Guide</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/11/10/" rel="prev" title="My first C program">
+                  <i class="fa fa-chevron-left"></i> My first C program
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/05/07/" rel="next" title="Experience with Blender">
+                  Experience with Blender <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jesse Gong</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+<!-- hexo injector body_end start --><script>
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
+<!-- hexo injector body_end end --></body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"jessse.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="spotDLDownload your Spotify playlists and songs along with album art and metadata">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spotDL">
+<meta property="og:url" content="https://jessse.me/2021/06/15/">
+<meta property="og:site_name" content="Jesse&#39;s Blog">
+<meta property="og:description" content="spotDLDownload your Spotify playlists and songs along with album art and metadata">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/spotDL/spotify-downloader/master/docs/static/logo-transparent.png">
+<meta property="og:image" content="https://img.shields.io/apm/l/atomic-design-ui.svg?style=flat-square&amp;color=44CC11">
+<meta property="og:image" content="https://img.shields.io/pypi/pyversions/spotDL?color=%2344CC11&amp;style=flat-square">
+<meta property="og:image" content="https://img.shields.io/github/commits-since/spotDL/spotify-downloader/latest?color=44CC11&amp;style=flat-square">
+<meta property="og:image" content="https://img.shields.io/pypi/dw/spotDL?label=downloads@pypi&amp;color=344CC11&amp;style=flat-square">
+<meta property="og:image" content="https://img.shields.io/github/contributors/spotDL/spotify-downloader?style=flat-square">
+<meta property="og:image" content="https://img.shields.io/discord/771628785447337985?label=discord&amp;logo=discord&amp;style=flat-square">
+<meta property="og:image" content="https://asciinema.org/a/wDNFL5XGhdadUK2EnOkv46YMG.svg">
+<meta property="og:image" content="https://contributors-img.web.app/image?repo=spotdl/spotify-downloader">
+<meta property="article:published_time" content="2021-06-15T15:49:58.000Z">
+<meta property="article:modified_time" content="2022-06-11T00:45:37.349Z">
+<meta property="article:author" content="Jesse Gong">
+<meta property="article:tag" content="Blog Jesse WH Wardlaw Hartridge Student">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/spotDL/spotify-downloader/master/docs/static/logo-transparent.png">
+
+
+<link rel="canonical" href="https://jessse.me/2021/06/15/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://jessse.me/2021/06/15/","path":"2021/06/15/","title":"spotDL"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>spotDL | Jesse's Blog</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start --><link rel="manifest" href="/manifest.json" /><!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="Jesse's Blog" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jesse's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#spotDL"><span class="nav-number">1.</span> <span class="nav-text">spotDL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-spotDL-does"><span class="nav-number">1.1.</span> <span class="nav-text">What spotDL does</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Redesigned"><span class="nav-number">1.1.1.</span> <span class="nav-text">Redesigned</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Prerequisites"><span class="nav-number">1.2.</span> <span class="nav-text">Prerequisites</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation"><span class="nav-number">1.3.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-FFmpeg"><span class="nav-number">1.3.1.</span> <span class="nav-text">Installing FFmpeg</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installing-spotDL"><span class="nav-number">1.3.2.</span> <span class="nav-text">Installing spotDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#On-Termux"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">On Termux</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Arch"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">Arch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage"><span class="nav-number">1.4.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-a-song-run"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">To download a song, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-an-album-run"><span class="nav-number">1.4.0.2.</span> <span class="nav-text">To download an album, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-a-playlist-run"><span class="nav-number">1.4.0.3.</span> <span class="nav-text">To download a playlist, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-all-songs-from-an-artist-run"><span class="nav-number">1.4.0.4.</span> <span class="nav-text">To download all songs from an artist run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-search-for-and-download-a-song-run-with-quotation-marks"><span class="nav-number">1.4.0.5.</span> <span class="nav-text">To search for and download a song, run, with quotation marks</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-resume-a-failed-x2F-incomplete-download-run"><span class="nav-number">1.4.0.6.</span> <span class="nav-text">To resume a failed&#x2F;incomplete download, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#You-can-queue-up-multiple-download-tasks-by-separating-the-arguments-with-spaces"><span class="nav-number">1.4.0.7.</span> <span class="nav-text">You can queue up multiple download tasks by separating the arguments with spaces</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-youtube-video-with-metadata-from-spotify-run"><span class="nav-number">1.4.0.8.</span> <span class="nav-text">To download youtube video with metadata from spotify, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-download-songs-with-different-output-format-run"><span class="nav-number">1.4.0.9.</span> <span class="nav-text">To download songs with different output format run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-use-ffmpeg-binary-that-is-not-on-PATH-run"><span class="nav-number">1.4.0.10.</span> <span class="nav-text">To use ffmpeg binary that is not on PATH run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-generate-m3u-file-for-each-playlist-run"><span class="nav-number">1.4.0.11.</span> <span class="nav-text">To generate .m3u file for each playlist run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-use-youtube-instead-of-youtube-music-run"><span class="nav-number">1.4.0.12.</span> <span class="nav-text">To use youtube instead of youtube music run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-manually-choose-a-lyrics-provider-run"><span class="nav-number">1.4.0.13.</span> <span class="nav-text">To manually choose a lyrics provider, run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-change-number-of-threads-used-when-downloading-songs-run"><span class="nav-number">1.4.0.14.</span> <span class="nav-text">To change number of threads used when downloading songs run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-change-number-of-threads-used-when-searching-for-songs-run"><span class="nav-number">1.4.0.15.</span> <span class="nav-text">To change number of threads used when searching for songs run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-ignore-your-ffmpeg-version-run"><span class="nav-number">1.4.0.16.</span> <span class="nav-text">To ignore your ffmpeg version run</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-use-path-template"><span class="nav-number">1.4.0.17.</span> <span class="nav-text">To use path template</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pipx-Isolated-Environment-Alternative"><span class="nav-number">1.5.</span> <span class="nav-text">pipx Isolated Environment Alternative</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Contributor-Guide"><span class="nav-number">1.6.</span> <span class="nav-text">Contributor Guide</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Contributors"><span class="nav-number">1.7.</span> <span class="nav-text">Contributors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Authors"><span class="nav-number">1.8.</span> <span class="nav-text">Authors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#License"><span class="nav-number">1.9.</span> <span class="nav-text">License</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jesse Gong</p>
+  <div class="site-description" itemprop="description">Nice to meet u! This is my Blog! :b</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jessse.me/2021/06/15/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jesse Gong">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jesse's Blog">
+      <meta itemprop="description" content="Nice to meet u! This is my Blog! :b">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="spotDL | Jesse's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          spotDL
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-06-15 11:49" itemprop="dateCreated datePublished" datetime="2021-06-15T11:49:58-04:00">2021-06-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-06-10 20:45" itemprop="dateModified" datetime="2022-06-10T20:45:37-04:00">2022-06-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="spotDL"><a href="#spotDL" class="headerlink" title="spotDL"></a><a target="_blank" rel="noopener" href="https://github.com/spotDL/spotify-downloader">spotDL</a></h1><p>Download your Spotify playlists and songs along with album art and metadata</p>
+<span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/spotDL/spotify-downloader/master/docs/static/logo-transparent.png" alt="image"></p>
+<blockquote>
+<p>README.MD form <a target="_blank" rel="noopener" href="https://github.com/spotDL/spotify-downloader">GitHub</a></p>
+</blockquote>
+<div align="center">
+
+
+
+<p><a target="_blank" rel="noopener" href="https://github.com/spotDL/spotify-downloader/blob/master/LICENSE"><img src="https://img.shields.io/apm/l/atomic-design-ui.svg?style=flat-square&amp;color=44CC11" alt="MIT License"></a><a target="_blank" rel="noopener" href="https://pypi.org/project/spotdl/"><img src="https://img.shields.io/pypi/pyversions/spotDL?color=%2344CC11&amp;style=flat-square" alt="pypi version"></a> <a target="_blank" rel="noopener" href="https://pypi.org/project/spotdl/"><img src="https://img.shields.io/github/commits-since/spotDL/spotify-downloader/latest?color=44CC11&amp;style=flat-square" alt="GitHub commits since latest release (by date)"><img src="https://img.shields.io/pypi/dw/spotDL?label=downloads@pypi&amp;color=344CC11&amp;style=flat-square" alt="pypi downloads"></a> <a target="_blank" rel="noopener" href="https://discord.gg/xCa23pwJWY"><img src="https://img.shields.io/github/contributors/spotDL/spotify-downloader?style=flat-square" alt="Contributors"><img src="https://img.shields.io/discord/771628785447337985?label=discord&amp;logo=discord&amp;style=flat-square" alt="Discord"></a></p>
+</div>
+
+<blockquote>
+<p>The fastest, easiest, and most accurate command-line music downloader</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://asciinema.org/a/wDNFL5XGhdadUK2EnOkv46YMG"><img src="https://asciinema.org/a/wDNFL5XGhdadUK2EnOkv46YMG.svg" alt="asciicast"></a></p>
+<h2 id="What-spotDL-does"><a href="#What-spotDL-does" class="headerlink" title="What spotDL does"></a>What spotDL does</h2><ol>
+<li>Downloads music from YouTube as an MP3 file</li>
+<li>Applies basic metadata gathered from Spotify such as:<ul>
+<li>Track Name</li>
+<li>Track Number</li>
+<li>Album</li>
+<li>Album Cover</li>
+<li>Genre</li>
+<li>and more!</li>
+</ul>
+</li>
+</ol>
+<h3 id="Redesigned"><a href="#Redesigned" class="headerlink" title="Redesigned"></a>Redesigned</h3><p>spotDL is being redesigned! This means we are currently not accepting new feature requests. You can talk to us on <a target="_blank" rel="noopener" href="https://discord.gg/xCa23pwJWY">our Discord</a> if there is anything further.</p>
+<h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul>
+<li>Python 3.6.1 or above (added to PATH)</li>
+<li>FFmpeg 4.2 or above (added to PATH)</li>
+</ul>
+<blockquote>
+<p><strong><em>YouTube Music must be available in your country for spotDL to work. This is because we use YouTube Music to filter search results. You can check if YouTube Music is available in your country, by visiting <a target="_blank" rel="noopener" href="https://music.youtube.com/">YouTube Music</a>.</em></strong></p>
+</blockquote>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><h3 id="Installing-FFmpeg"><a href="#Installing-FFmpeg" class="headerlink" title="Installing FFmpeg"></a>Installing FFmpeg</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://windowsloop.com/install-ffmpeg-windows-10/">Windows Tutorial</a></li>
+<li>OSX - <code>brew install ffmpeg</code></li>
+<li>Linux - <code>sudo apt install ffmpeg</code></li>
+</ul>
+<h3 id="Installing-spotDL"><a href="#Installing-spotDL" class="headerlink" title="Installing spotDL"></a>Installing spotDL</h3><ul>
+<li><p>Recommended Stable Version:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install spotdl</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>Dev Version: <strong>(NOT STABLE)</strong></p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install https://codeload.github.com/spotDL/spotify-downloader/zip/dev</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<p>If you have trouble installing spotdl take a look at the extended installation guide<br><a href="/docs/INSTALLATION.md">here</a> or ask for help in our<br><a target="_blank" rel="noopener" href="https://discord.gg/xCa23pwJWY">discord server</a></p>
+<h4 id="On-Termux"><a href="#On-Termux" class="headerlink" title="On Termux"></a>On Termux</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://raw.githubusercontent.com/spotDL/spotify-downloader/master/termux/setup_spotdl.sh | sh</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="Arch"><a href="#Arch" class="headerlink" title="Arch"></a>Arch</h4><p>There is an Arch User Repository (AUR) package for <a target="_blank" rel="noopener" href="https://aur.archlinux.org/packages/python-spotdl/">spotDL</a>.</p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><ul>
+<li><h4 id="To-download-a-song-run"><a href="#To-download-a-song-run" class="headerlink" title="To download a song, run"></a>To download a song, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [trackUrl]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-download-an-album-run"><a href="#To-download-an-album-run" class="headerlink" title="To download an album, run"></a>To download an album, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [albumUrl]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-download-a-playlist-run"><a href="#To-download-a-playlist-run" class="headerlink" title="To download a playlist, run"></a>To download a playlist, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [playlistUrl]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-download-all-songs-from-an-artist-run"><a href="#To-download-all-songs-from-an-artist-run" class="headerlink" title="To download all songs from an artist run"></a>To download all songs from an artist run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [artistUrl]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/artist/1fZAAHNWdSM5gqbi9o5iEA</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-search-for-and-download-a-song-run-with-quotation-marks"><a href="#To-search-for-and-download-a-song-run-with-quotation-marks" class="headerlink" title="To search for and download a song, run, with quotation marks"></a>To search for and download a song, run, <strong>with quotation marks</strong></h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">'[songQuery]'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">'The Weeknd - Blinding Lights'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p><em>Note: This is not accurate and often causes errors.</em></p>
+</blockquote>
+</li>
+<li><h4 id="To-resume-a-failed-x2F-incomplete-download-run"><a href="#To-resume-a-failed-x2F-incomplete-download-run" class="headerlink" title="To resume a failed/incomplete download, run"></a>To resume a failed/incomplete download, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [pathToTrackingFile]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">'The Weeknd - Blinding Lights.spotdlTrackingFile'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p><em>Note: <code>.spotdlTrackingFile</code>s are automatically created when a download starts and deleted on completion</em></p>
+</blockquote>
+</li>
+<li><h4 id="You-can-queue-up-multiple-download-tasks-by-separating-the-arguments-with-spaces"><a href="#You-can-queue-up-multiple-download-tasks-by-separating-the-arguments-with-spaces" class="headerlink" title="You can queue up multiple download tasks by separating the arguments with spaces"></a>You can queue up multiple download tasks by separating the arguments with spaces</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songQuery1] [albumUrl] [songQuery2] ... (order does not matter)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">'The Weeknd - Blinding Lights'</span> https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID ...</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p><em>Note: spotDL downloads up to 4 songs in parallel, so for a faster experience, download albums and playlist, rather than tracks.</em></p>
+</blockquote>
+</li>
+<li><h4 id="To-download-youtube-video-with-metadata-from-spotify-run"><a href="#To-download-youtube-video-with-metadata-from-spotify-run" class="headerlink" title="To download youtube video with metadata from spotify, run"></a>To download youtube video with metadata from spotify, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">"YouTubeURL|SpotifyURL"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl <span class="string">"https://www.youtube.com/watch?v=EO7XnC1YpVo|https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>Note: Urls have to be separated with <code>|</code> and quoted properly ex. “YouTubeURL|SpotifyUrl”</p>
+</blockquote>
+</li>
+<li><h4 id="To-download-songs-with-different-output-format-run"><a href="#To-download-songs-with-different-output-format-run" class="headerlink" title="To download songs with different output format run"></a>To download songs with different output format run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --output-format mp3/m4a/flac/opus/ogg/wav</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --output-format opus</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-use-ffmpeg-binary-that-is-not-on-PATH-run"><a href="#To-use-ffmpeg-binary-that-is-not-on-PATH-run" class="headerlink" title="To use ffmpeg binary that is not on PATH run"></a>To use ffmpeg binary that is not on PATH run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --ffmpeg path/to/your/ffmpeg.exe</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --ffmpeg C:\ffmpeg\bin\ffmpeg.exe</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-generate-m3u-file-for-each-playlist-run"><a href="#To-generate-m3u-file-for-each-playlist-run" class="headerlink" title="To generate .m3u file for each playlist run"></a>To generate .m3u file for each playlist run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [playlistUrl] --m3u</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/playlist/37i9dQZF1E8UXBoz02kGID --m3u</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-use-youtube-instead-of-youtube-music-run"><a href="#To-use-youtube-instead-of-youtube-music-run" class="headerlink" title="To use youtube instead of youtube music run"></a>To use youtube instead of youtube music run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --use-youtube</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3 --use-youtube</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-manually-choose-a-lyrics-provider-run"><a href="#To-manually-choose-a-lyrics-provider-run" class="headerlink" title="To manually choose a lyrics provider, run"></a>To manually choose a lyrics provider, run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --lyrics-provider lyrics_provider</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  available lyrics providers:</p>
+<ul>
+<li>genius</li>
+<li>musixmatch</li>
+</ul>
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3 --lyrics-provider genius</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-change-number-of-threads-used-when-downloading-songs-run"><a href="#To-change-number-of-threads-used-when-downloading-songs-run" class="headerlink" title="To change number of threads used when downloading songs run"></a>To change number of threads used when downloading songs run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --dt [number]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3 --dt 8</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-change-number-of-threads-used-when-searching-for-songs-run"><a href="#To-change-number-of-threads-used-when-searching-for-songs-run" class="headerlink" title="To change number of threads used when searching for songs run"></a>To change number of threads used when searching for songs run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --st [number]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3 --st 8</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-ignore-your-ffmpeg-version-run"><a href="#To-ignore-your-ffmpeg-version-run" class="headerlink" title="To ignore your ffmpeg version run"></a>To ignore your ffmpeg version run</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --ignore-ffmpeg-version</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><h4 id="To-use-path-template"><a href="#To-use-path-template" class="headerlink" title="To use path template"></a>To use path template</h4>  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl [songUrl] --path-template <span class="string">'template'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>  example:</p>
+  <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">spotdl https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b --path-template <span class="string">'{artist}/{album}/{title} - {artist}.{ext}'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>  possible values:</p>
+<ul>
+<li>{artist}</li>
+<li>{artists}</li>
+<li>{title}</li>
+<li>{album}</li>
+<li>{ext}</li>
+<li>{playlist}</li>
+</ul>
+</li>
+</ul>
+<h2 id="pipx-Isolated-Environment-Alternative"><a href="#pipx-Isolated-Environment-Alternative" class="headerlink" title="pipx Isolated Environment Alternative"></a><code>pipx</code> Isolated Environment Alternative</h2><p>For users who are not familiar with <code>pipx</code>, it can be used to run scripts <strong>without</strong><br>installing the spotDL package and all the dependencies globally with pip. (Effectively<br>skipping over the <a href="#Installing-spotDL">spotDL Installation</a> step)</p>
+<p>First, you will need to install <code>pipx</code> by running:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python3 -m pip install --user pipx</span><br><span class="line">python3 -m pipx ensurepath</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Next, you can jump directly to running spotDL with:</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pipx run spotdl ...</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Contributor-Guide"><a href="#Contributor-Guide" class="headerlink" title="Contributor Guide"></a>Contributor Guide</h2><p>Interested in contributing? Check out our <a href="docs/CONTRIBUTING.md">CONTRIBUTING.md</a> to find<br>resources around contributing along with a guide on how to set up a development<br>environment.</p>
+<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p><a target="_blank" rel="noopener" href="https://github.com/spotdl/spotify-downloader/graphs/contributors"><img src="https://contributors-img.web.app/image?repo=spotdl/spotify-downloader" alt="contributors"></a></p>
+<h2 id="Authors"><a href="#Authors" class="headerlink" title="Authors"></a>Authors</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/ritiek">@ritiek</a> for creating and maintaining spotDL for 4 years</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/rocketinventor">@rocketinventor</a> for figuring out YouTube Music<br>querying</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/MikhailZex">@MikhailZex</a> for, never mind…</li>
+</ol>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p><a href="/LICENSE">MIT</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/03/" rel="prev" title="checkra1n">
+                  <i class="fa fa-chevron-left"></i> checkra1n
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/03/26/" rel="next" title="Three.js Application Test">
+                  Three.js Application Test <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jesse Gong</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+<!-- hexo injector body_end start --><script>
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
+<!-- hexo injector body_end end --></body>
+</html>

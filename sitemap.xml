@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jessse.me/moments/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/projects/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jessse.me/site/</loc>
     
     <lastmod>2022-06-11</lastmod>
@@ -29,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/moments/</loc>
+    <loc>https://jessse.me/categories/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -38,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/projects/</loc>
+    <loc>https://jessse.me/ideas/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -47,43 +65,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/2019/11/11/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/2020/11/09/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/2022/03/27/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/2022/03/26/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/2021/02/04/</loc>
+    <loc>https://jessse.me/2021/02/03/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -110,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/</loc>
+    <loc>https://jessse.me/2021/01/13/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -119,7 +101,34 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/ideas/</loc>
+    <loc>https://jessse.me/2019/11/10/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/2022/03/26/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/2020/11/09/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/2022/03/26/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -137,25 +146,16 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/2020/10/03/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/2020/11/11/</loc>
-    
-    <lastmod>2022-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jessse.me/2020/11/04/</loc>
+    
+    <lastmod>2022-06-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/2020/10/03/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/2020/09/30/</loc>
+    <loc>https://jessse.me/2020/11/10/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/2021/01/13/</loc>
+    <loc>https://jessse.me/2020/09/30/</loc>
     
     <lastmod>2022-06-11</lastmod>
     
@@ -216,6 +216,13 @@
   </url>
   
   <url>
+    <loc>https://jessse.me/tags/Resource-Share/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://jessse.me/tags/Projects-Tools/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -224,13 +231,6 @@
   
   <url>
     <loc>https://jessse.me/tags/Web-Application/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/tags/Resource-Share/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -253,13 +253,6 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Internet/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jessse.me/categories/Technology/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -267,21 +260,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Internet/Web-Application/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Little-Projects/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Programing-Language/</loc>
+    <loc>https://jessse.me/categories/Internet/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -295,7 +274,14 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Web-Application/</loc>
+    <loc>https://jessse.me/categories/Little-Projects/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Internet/Web-Application/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -309,14 +295,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Apple/iOS-Revers/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Projects/</loc>
+    <loc>https://jessse.me/categories/Operating-System/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -330,21 +309,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Programing-Language/C/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Operating-System/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Web-Application/JavaScript/</loc>
+    <loc>https://jessse.me/categories/Projects/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -358,21 +323,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Programing-Language/JavaScript/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Projects/Blog/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Programing-Language/Python/</loc>
+    <loc>https://jessse.me/categories/Programing-Language/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -386,7 +337,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Web-Application/JavaScript/Three-js/</loc>
+    <loc>https://jessse.me/categories/Projects/Blog/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -400,14 +351,7 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Operating-System/iOS/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Tools/Github/</loc>
+    <loc>https://jessse.me/categories/Programing-Language/JavaScript/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -421,21 +365,14 @@
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Projects/Online-Desktop/</loc>
+    <loc>https://jessse.me/categories/Programing-Language/Python/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jessse.me/categories/Projects/Booking-OS/</loc>
-    <lastmod>2022-06-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jessse.me/categories/Programing-Language/Nodejs/</loc>
+    <loc>https://jessse.me/categories/Tools/Github/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -449,7 +386,70 @@
   </url>
   
   <url>
+    <loc>https://jessse.me/categories/Programing-Language/Nodejs/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://jessse.me/categories/Tools/Docker/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Programing-Language/C/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Web-Application/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Apple/iOS-Revers/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Web-Application/JavaScript/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Projects/Online-Desktop/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Operating-System/iOS/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Web-Application/JavaScript/Three-js/</loc>
+    <lastmod>2022-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jessse.me/categories/Projects/Booking-OS/</loc>
     <lastmod>2022-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
