@@ -48,10 +48,6 @@ if [ "$1" != "u" ]; then
 	git add .
 	git commit -m $1
 	git push
-elif [ "$1" == "fu" ]; then
-	git add .
-	git commit -m "UPDATE.$(date)"
-	git push --force
 else
 	git add .
 	git commit -m "UPDATE.$(date)"
