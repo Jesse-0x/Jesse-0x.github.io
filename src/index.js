@@ -3,6 +3,7 @@ import { Sky } from './jsm/objects/Sky.js';
 import { OrbitControls } from './jsm/controls/OrbitControls.js';
 import WebGL from './jsm/capabilities/WebGL.js'
 
+
 let container, stats;
 let camera, scene, renderer;
 let mesh, controls, sun;
@@ -27,26 +28,27 @@ function init() {
     //scene settng
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
-    camera.position.set(0, 0, 100);
+    camera.position.set(200, 100, 200);
     CreatePlane();
     CreateCube();
     AddSky();
     //DrawLing();
-    AddLight();
+    //AddLight();
     CreateControl();
-
+    //staticdd();
 }
 
 function CreatePlane(){
-    const geometry = new THREE.PlaneGeometry( 1000, 1000);
-    const material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} );
+    const geometry = new THREE.PlaneGeometry( 300, 300);
+    const material = new THREE.MeshStandardMaterial( {color: 0xffff00, side: THREE.DoubleSide, roughness: 0} );
     const plane = new THREE.Mesh( geometry, material );
+    plane.rotateX(1.5708);
+    plane.translateZ(15);
     scene.add( plane );
 }
 function CreateCube() {
     const geometry = new THREE.BoxGeometry( 30, 30, 30 );
     const material = new THREE.MeshStandardMaterial( {roughness: 0,color: 0xbffffe, } );
-
     mesh = new THREE.Mesh( geometry, material );
     scene.add( mesh );
 }
@@ -86,12 +88,13 @@ function CreateControl() {
     controls = new OrbitControls(camera, renderer.domElement);
     //controls.maxPolarAngle = Math.PI * 0.495;
     controls.target.set(0, 2, 0);
+
     controls.enableDamping = true;
 
     //controls.autoRotate = true;
     //controls.autoRotateSpeed = 100;
-    controls.minDistance = 40.0;
-    controls.maxDistance = 200.0;
+    controls.minDistance = 20.0;
+    controls.maxDistance = 400.0;
     controls.update();
 }
 
@@ -148,6 +151,23 @@ function onWindowResize() {
     camera.updateProjectionMatrix();
 
     renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+import Stats from './jsm/libs/stats.module.js';
+import { GUI } from './jsm/libs/lil-gui.module.min.js';
+
+function staticdd() {
+    stats = new Stats();
+    container.appendChild( stats.dom );
+
+    // GUI
+
+    const gui = new GUI();
+
+    const folderSky = gui.addFolder( 'Sky' );
+    folderSky.add( parameters, 'elevation', 0, 90, 0.1 ).onChange( updateSun );
+    folderSky.add( parameters, 'azimuth', - 180, 180, 0.1 ).onChange( updateSun );
+    folderSky.open();
 }
 
 function animate() {
