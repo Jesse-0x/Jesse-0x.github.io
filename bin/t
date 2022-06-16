@@ -53,7 +53,6 @@ else
 	git commit -m "UPDATE.$(date)"
 	git push
 fi
-
 echoPrimary "--------------Recovering workspace!--------------"
 cd $BLOGB; npm i
 
